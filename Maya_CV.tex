@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Maya Seri-Levi} \\ \vspace{1pt}
+    \small 310-619-9140 $|$ \href{mailto:mserilevi@gmail.com}{\underline{mserilevi@gmail.com}} $|$ 
+    \small 22526 Linda Dr. Torrance CA 90505 $|$
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {El Camino College}{Torrance, CA}
+      {Associates of Arts in Allied Sciences}{1981 -- 1985}
+    \resumeSubheading
+      {El Camino College}{Torrance, CA}
+      {Radiology Program}{1983 -- 1985}
+    \resumeSubheading
+      {Torrance Memorial Hospital}{Torrance, CA}
+      {Radiology Technologist Program}{1983 -- 1985}
+  \resumeSubHeadingListEnd
+
+%-----------LICENSURE-----------
+\section{Licensure}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {California Radiologic Technologist}{}
+      {State of California Department of Health Services}{}
+    \resumeSubheading
+      {American Registry Radiologic Technologist}{}
+      {The American Registry of Radiologic Technologists}{}
+    \resumeSubheading
+    {Basic Life Support (BLS) and Venipuncture License}{}
+    {}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MRI Technologist}{Dec 2000 - Present}
+      {Torrance Memorial Hospital}{}
+      \resumeItemListStart
+        \resumeItem{Provided all MRI services included MRA and Cardiac.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MRI Technologist}{Sep 1994 -- June 2000}
+      {Mor-Mar MRI}{}
+      \resumeItemListStart
+        \resumeItem{Provided mobile MRI services across the state of Israel.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MRI Technologist}{Oct 1989 - April 1992}
+      {Beverly Hills MRI}{}
+      \resumeItemListStart
+        \resumeItem{Provided all MRI procedures including MRA.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Chief Technologist}{June 1987 - Oct 1989}
+      {San Pedro Diagnostic Center}{}
+      \resumeItemListStart
+        \resumeItem{Provided basic diagnostic procedures.}
+        \resumeItem{Aided in management, public relations and ordering supplies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Radiologist Technologist}{Nov 1985 - June 1987}
+      {Torrance Memorial Hospital}{}
+      \resumeItemListStart
+        \resumeItem{Provided basic diagnostic procedures.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
