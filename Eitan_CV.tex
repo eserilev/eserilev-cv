@@ -136,20 +136,18 @@
       {Software Engineer}{Jan 2024 -- Present}
       {Sigma Prime}{}
       \resumeItemListStart 
-        \resumeItem{Contributed to Lighthouse, an Ethereum consensus client implementation written in Rust.}
-        \resumeItem{Contributed to rust-libp2p, a peer to peer networking implementation written in Rust.}
+         \resumeItem{Internal maintainer of Lighthouse, an open source Ethereum consensus client written in Rust, and top-3 contributor by commits over the last two years.}
+         \resumeItem{Leading the Lighthouse implementation of Gloas (enshrined Proposer-Builder Separation), designing and implementing changes across the full consensus layer stack in coordination with team members, Ethereum researchers and other client teams.}
+        \resumeItem{Contributing to and reviewing Ethereum consensus layer specifications. Implementing changes across fork choice, networking, database, and data availability subsystems.}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Director of Product Engineering}{Dec 2021 -- May 2024}
+      {Director of Product Engineering}{Dec 2021 -- Jan 2024}
       {Dcentralab}{}
       \resumeItemListStart
-        \resumeItem{Designed and built the worlds first BSC to Cardano bridge. Currently the Cardano bridge can be used to bridge tokens to/from 15 different EVM networks and has facilated hundreds of millions of dollars in transaction volume.}
-        \resumeItem{Designed and built Chainport stablecoin bridge functionality. The contracts storing cross-chain stablecoin liquidity utilize a stableswap algorithim to minimize slippage.}
-        \resumeItem{Built a mechanism that checks cross chain token reserves and issues automatic contract freezes if token balances are incorrect.}
-        \resumeItem{Built Chainports cross-chain fee infrastructure which allows users to pay for bridge fees using Chainports native token, PORTX.}
+        \resumeItem{Designed and built the world's first BSC to Cardano bridge. Currently the Cardano bridge can be used to bridge tokens to/from 15 different EVM networks and has facilitated hundreds of millions of dollars in volume.}
+        \resumeItem{Built security mechanisms like cross chain circuit breakers.}
         \resumeItem{Managed a team of several frontend, backend and solidity engineers. Provided mentorship, participated in code reviews and created/reviewed technical specifications.}
-        \resumeItem{After December 2023, my role moved from full time to part time consultant.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -163,13 +161,12 @@
 %-------------------------------------------
     
     \resumeSubheading
-      {Software Engineer}{Sep 2018 -- Dec 2023}
+      {Software Engineer}{Sep 2018 -- Dec 2021}
       {Winc Wines}{}
       \resumeItemListStart
-        \resumeItem{Helped design and build Wincs monthly subscription based business model.}
-        \resumeItem{Helped design and build Wincs custom wine recommendation engine.}
+        \resumeItem{Helped design and build Winc's monthly subscription based business model.}
+        \resumeItem{Helped design and build Winc's custom wine recommendation engine.}
         \resumeItem{Developed consumer facing software using Angular, Node.js, .NET and Azure.}
-        \resumeItem{After December 2021, my role moved from full time to part time.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -181,20 +178,19 @@
       \resumeProjectHeading
           {\textbf{Lighthouse} $|$ \emph{Rust}}{}
           \resumeItemListStart
-            \resumeItem{Implemented the Beacon API block v3 endpoint. This endpoint is part of the upcoming Ethereum Deneb upgrade.}
-            \resumeItem{Added SSZ support to the full block production flow. Based on benchmarks related to encoding/decoding of signed blinded beacon block payloads with SSZ vs JSON, SSZ has been shown to be roughly 40x faster.}
-            \resumeItem{Added several new database implementation to the Slasher backend. The new database implementations include Redb and Sqlite.}
-            \resumeItem{Modularized the Beacon Node backend to allow for new database implementations to be added in the future.}
-            \resumeItem{Implemented several Beacon API endpoints related to validator rewards, lightclients and more.}
-            \resumeItem{Made over 15 separate contributions to the Lighthouse codebase.}
+            \resumeItem{Began as an external contributor in April 2023, hired as a full-time internal contributor in January 2024.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{rust-libp2p} $|$ \emph{Rust}}{}
           \resumeItemListStart
-            \resumeItem{Added tracing/structured logging to the rust-libp2p library which provides developers with much more informative/helpful logs.}
+            \resumeItem{Migrated rust-libp2p to tracing. This enabled upstream users to have a much more detailed and granular view of internal rust-libp2p processes.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{lockbud} $|$ \emph{Rust}}{}
+          \resumeItemListStart
+            \resumeItem{Helped update lockbud to support several new versions of Nightly Rust.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
-
 
 
 %
@@ -202,9 +198,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Rust, Python, Solidity, C\#, Typescript, SQL} \\
-     \textbf{Developer Tools}{: Git, Docker, AWS, Azure, Vim, VS Code} \\
-     \textbf{Libraries/Frameworks}{: web3, hardhat, reqwest, warp, rusqlite, redb, lmdb, mongo, pycardano, AWS lambda}
+     \textbf{Languages}{: Rust, Python, Solidity, C\#, Javascript/Typescript, SQL} \\
+     \textbf{Tools and Platforms}{: Git, Docker, AWS, Hetzner, Azure, Agentic Workflows (Claude Code, OpenClaw)} \\
+     \textbf{Libraries/Frameworks}{: web3, hardhat, rusqlite, redb, lmdb, mongo, pycardano} \\
     }}
  \end{itemize}
 
